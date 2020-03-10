@@ -45,12 +45,12 @@ fpa.close()
 fpb.close()
 fpc.close()
 
-def ToBase64(file, txt):
-    with open(file, 'rb') as fileObj:
-        gfwlist_name = fileObj.read()
-        base64_data = base64.b64encode(gfwlist_name)
-        fout = open(txt, 'w')
-        fout.write(base64_data.decode())
-        fout.close()
+# def ToBase64(file, txt):
+#     with open(file, 'rb') as fileObj:
+#         gfwlist_name = fileObj.read()
+#         base64_data = base64.b64encode(gfwlist_name)
+#         fout = open(txt, 'w')
+#         fout.write(base64_data.decode())
+#         fout.close()
 
-ToBase64("./gfwlist.txt",'gfwlist.txt')        
+# ToBase64("./gfwlist.txt",'gfwlist.txt')        
